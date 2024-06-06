@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Canales Rupay Jose David">
+    <link rel="shortcout icon" href="img/icono-pagina.ico">
+    <link rel="stylesheet" href="CSS/barra-navegacion.css">
+    <link rel="stylesheet" href="CSS/contactos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>El Molinero</title>
+</head>
+<body>
+    <!--       FORMULARIO DE CONTACTO     -->
+        <section class="formulario box">
+            <article class="form__img">
+                <img src="img/Trayectoria/banner-mobil.jpg" alt="">
+            </article>
+            <div class="TOTONA">
+                <div class="form__consulta">
+                <h1>EL MOLINERO <i class="fa-solid fa-fish-fins"></i></h1>
+                    <form method="dialog">
+                        <label for="name">Nombre Completo</label>                 
+                        <input type="text" name="name" id="name" placeholder="Ingrese su dato" required>
+                        <label for="DNI">N° DNI</label>
+                        <input type="text" name="DNI" id="DNI" placeholder="Ingrese su DNI" pattern="[0-9]{8}" required>
+                        <label for="cell">N° Telefono</label>
+                        <input type="text" name="cell" id="cell" placeholder="Ingrese su N° de celular" pattern="[0-9]{9}" required>
+                        <label for="direc">Dirección</label>
+                        <input type="text" name="direc" id="direc" placeholder="Ingrese su Direccion" required>
+                        <label for="opcion">Tipo de Consulta
+                            <select name="opcion" id="opcion">
+                                <option>Trabajo</option>
+                                <option>Reservación</option>
+                                <option>Reclamo</option>
+                                <option>Otro</option>
+                            </select>
+                        </label>
+                        <label for="archivo">Envie su Consulta en PDF
+                            <input type="file" name="archivo" id="archivo" required>
+                        </label>
+                        <button><input type="submit" value="Enviar" name="aceptar" id="aceptar"></button>
+                    </form>
+                </div>
+                <div class="form__registro">
+                    <h2>REGISTRATE</h2>
+                    <form method="dialog">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="ejem@gmail.com" required>
+                        <label for="contra">Contraseña</label>
+                        <input type="password" name="contra" id="contra" placeholder="Password" pattern="[0-9]{8}" required>
+                        <button><input type="submit" value="Inicie Sesión" name="submit" id=" submit"></button>
+                    </form>
+                    <p>Tambien inicia sesión con</p>
+                    <div class="form__link">
+                        <a href="#"><i class="fa-brands fa-google"></i> Google</a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                    </div>
+                    <p>¿No tienes una cuenta? <span>Crea una cuenta</span></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    
+    <!--    ICONOS EXTERNOS  -->
+    <script src="https://kit.fontawesome.com/d8ea97db0e.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/*---------VARIABLES---------*/
+:root {
+    --color-principal:#ffffff;
+--color-secundario:#05469b;
+    --color-tercero :#a4bcdb;
+    --color-cuarto:#1399D5;
+    --color-quinto:#133358 ;
+    --color-sexto: #768692;
+}
+
+
+/*------AUTORES DE JOSE CAMALES------*/
+.autor__img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+.autor__img img {
+    width: 100%;
+    height: 600px;
+}
+.autor__datos {
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.autor__title {
+    font-size: 2rem;
+    color: var(--color-secundario);
+    margin:10px 0;
+}
+.autor__text{
+    text-align: justify;
+    color: var(--color-sexto);
+    font-weight: 500;
+}
+
+.autor__habilidades h2 {
+    color: var(--color-secundario);
+    margin: 20px 0;
+}
+.habilidades__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.habilidades__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.habilidades__container i{
+    font-size: 2.5rem;
+}
+.habilidades__container:last-child i {
+    font-size: 1.9rem;
+}
+.habilidades__bar {
+    border: 2px solid #48e;
+    border-radius: 15px;
+    padding: 2px;
+    width: 80%;
+}
+.bar {
+    background-color: #48e;
+    border-radius: 12px;
+    padding: 7px;
+    color: var(--color-principal);
+}
+.bar-85 {
+    width: 80%;
+}
+.bar-90 {
+    width: 90%;
+}
+.bar-20 {
+    width: 20%;
+}
+.bar-35 {
+    width: 35%;
+}
+.fa-html5 {
+    color: #e34c26;
+}
+.fa-css3-alt {
+    color: #264de4;
+}
+.fa-js {
+    color: #f0db4f;
+    background-color: #323330;
+}
+.fa-php {
+    background-color: #8993be;
+    color: #232531;
+}
+/*-------AYALA--------*/
+.ayala .habilidades__list .bar-50 {
+    width: 50%;
+}
+.ayala .habilidades__list .bar-60{
+    width: 60%;
+}
+.ayala .habilidades__list .bar-15{
+    width: 15%;
+}
+.ayala .habilidades__list .bar-80{
+    width: 80%;
+}
+/*-------TEJADA-------*/
+.tejada .habilidades__list .bar-50 {
+    width: 50%;
+}
+.tejada .habilidades__list .bar-40 {
+    width: 40%;
+}
+.tejada .habilidades__list .bar-15{
+    width: 15%;
+}
+.tejada .habilidades__list .bar-85{
+    width: 85%;
+}
+/*--------SOSA--------*/
+.anthony .habilidades__list .bar-40 {
+    width: 40%;
+}
+.anthony .habilidades__list .bar-35 {
+    width: 35%;
+}
+.anthony .habilidades__list .bar-15 {
+    width: 15%;
+}
+.anthony .habilidades__list .bar-70 {
+    width: 70%;
+}
+/*-------LUCERO--------*/
+.lucero .habilidades__list .bar-70 {
+    width: 70%;
+}
+.lucero .habilidades__list .bar-30 {
+    width: 30%;
+}
+.lucero .habilidades__list .bar-50 {
+    width: 50%;
+}
+.lucero .habilidades__list .bar-30 {
+    width: 30%;
+}
+
+
+
+/*--------MEDIA QUERIES LAPTOP Y DESKTOP--------*/
+@media screen and (min-width:720px) {
+    .autor__fondo {
+        background-color: #e2eaff;
+    }
+    .autor__fondo:nth-child(3){
+        background-color: #133358cc;
+    }
+    .autor__fondo:nth-child(5) {
+        background-color: #133358cc;
+    }
+    .autor__container {
+        max-width: 1200px;
+        display: flex;
+        padding:50px 20px;
+        margin: auto;
+        height: 90vh;
+    }
+    .autor__img {
+        max-height: 100%;
+    }
+    .autor__datos {
+        width: 100%;
+        background-color: var(--color-principal);
+        max-height: 100%;
+        height: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 0 10px 0 #0003;
+    }
+    .autor__title {
+        font-size: 3.4rem;
+        margin-bottom: 30px;
+    }
+    .autor__img img{
+        border-top-left-radius:25px ;
+        border-bottom-left-radius: 25px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

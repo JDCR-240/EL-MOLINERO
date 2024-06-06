@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/barra-navegacion.css">
+    <link rel="shortcout icon" href="img/icono-pagina.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>Tilwind</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #e8eef6;
+        }
+    </style>
+
+    
+    <!--        BARRA DE NAVEGACION/ENCABEZADO       -->
+    <header>
+        <div class="box header">
+            <input type="checkbox" id="checkbox">
+            <i class="fa-solid fa-bars"></i>
+            <div class="header__img">
+                <a href="#"><img src="img/logo-ceviche.png" alt="logo de EL MOLINERO"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">home</span><a href="index.html" class="nav__link link-resalta" title="Pagina Principal">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">menu_book</span><a href="trayectoria.html" class="nav__link " title="Experiencia y Trayectoria">Somos</a>
+                    </li>
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">restaurant</span><a href="tienda.html" class="nav__link " title="Carta Virtual">Carta</a>
+                    </li>
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">home_pin</span><a href="estancias.html" class="nav__link" title="Horarios y Locales">Locales</a>
+                    </li>
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">call</span><a href="contactos.html" class="nav__link" target="_blank" title="Contactos">Contacto</a>
+                    </li>
+                    <li class="nav__item">
+                        <span class="material-symbols-outlined">notifications</span><a href="eventos.html" class="nav__link" title="Eventos">Eventos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__login">
+                <input type="text" name="text" id="text" placeholder="Buscar">
+                <label for="text"> <i class="fa-solid fa-magnifying-glass" title="Buscar"></i></label>
+                <a href="autores.html" ><i class="fa-regular fa-user" title="Autores"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+
+        <div class="mx-auto mt-8 mb-8 box">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/BHTo0L6K7lw" title="Cebiche de bonito" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/zWmDWAGsPtg" title="La Mejor Comida Marina Peruana 🇵🇪" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/YI5c999JL9E" title="PARIHUELA DE MARISCOS - COMIDA PERUANA | RECETA DE ACOMER.PE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/6XsBkZo1L04" title="Preparamos un Rico Ceviche de Pulpo - cocina a leña" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/OQgAXY02gHY" title="SI TERMINAS LA RONDA MARINA EN 10 MIN TE DOY S/400.00 | PERÚ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="relative">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/-ct4sAoIsf4" title="REEL COMIDA MARINA PERUANA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--        PIE DE PAGINA        -->
+        <footer>
+            <div class="footer box">
+                <ul>
+                    <li><h4>Pagina Web:</h4></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#popular">Mas Consumido</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                </ul>
+                <ul>
+                    <li><h4>Contactos:</h4></li>
+                    <li><a href="https://www.facebook.com/elmolineroperu" target="_blank"><i class="fa-brands fa-facebook" ></i></a>El Molinero</li>
+                    <li><a href="https://www.instagram.com/elmolineroperu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>@elmolineroperu</li>
+                    <li><a href="tel:+51944754618"><i class="fa-brands fa-whatsapp"></i></a>+51-944754618</li>
+                    <li><a href="mailto:"><i class="fa-regular fa-envelope"></i></a>molinero@gmail.com</li>
+                </ul>
+                <ul>
+                    <li><h4>Autores:</h4></li>
+                    <li>Jose Canales</li>
+                    <li>Noel Ayala</li>
+                    <li>Adriano Tejada</li>
+                    <li>Anthony Sosa</li>
+                    <li>Jesus Lucero</li>
+                </ul>
+            </div>
+            <div class="footer__img">
+                <img src="img/logo-ceviche.png" alt="">
+            </div>
+        </footer>
+    
+    
+    
+        <!--WHATSSAP FIXED-->
+        <section class="icon__estatico">
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>CONTACTATE 
+    CON UN ASESOR </span>
+            </a>
+        </section>
+    <!--    ICONOS EXTERNOS  -->
+    <script src="https://kit.fontawesome.com/d8ea97db0e.js" crossorigin="anonymous"></script>
+</body>
+</html>

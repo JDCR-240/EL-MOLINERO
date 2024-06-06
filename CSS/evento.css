@@ -1,0 +1,186 @@
+/*---------VARIABLES---------*/
+:root {
+    --color-principal:#ffffff;
+    --color-secundario:#05469b;
+    --color-tercero :#a4bcdb;
+    --color-cuarto:#1399D5;
+    --color-quinto:#133358 ;
+    --color-sexto: #768692;
+}
+body {
+    background: linear-gradient(#0009, #0009), url(../img/fondo-marino.png);
+    font-family: "Montserrat";
+}
+/*--------BANNER MOLINERO--------*/
+.banner-container {
+    background: linear-gradient(#133358dd, #133358dd) , url(../img/Carta/banner.png)center / cover;
+    padding: 0 20px;
+    container-type: inline-size;
+    container-name: banner;
+
+}
+.banner {
+    color: var(--color-principal);
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.banner__title {
+    font-size: 1.2rem;
+}
+.banner__text {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+@container banner (min-width:280px) {
+    .banner__title {
+        font-size: 1.4rem;
+    }
+    .banner__text {
+        font-size: 0.8rem;
+    }
+}
+@container banner (min-width:560px) {
+    .banner__title {
+        font-size: 1.8rem;
+    }
+    .banner__text {
+        font-size: 1rem;
+    }
+}
+@container banner (min-width:760px) {
+    .banner__title {
+        font-size: 2.5rem;
+    }
+    .banner__text {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/*-------EVENTO-CONTAINER--------*/
+.evento-container {
+    container-type: inline-size;
+    container-name: evento;
+    padding: 20px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.evento-container h2{ 
+    text-align: center;
+    margin:40px 0 20px;
+    background-color: var(--color-tercero);
+    color: var(--color-quinto);
+    font-size: 1.2rem;
+    padding: 3px 15px;
+    animation: title 1s linear infinite alternate;
+}
+@keyframes title {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px 0 var(--color-secundario), 0 0 15px 0 var(--color-secundario);
+    }
+
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px 0 var(--color-secundario), 0 0 20px 0 var(--color-secundario);
+    }
+}
+.evento-proximo {
+    margin-bottom: 150px;
+}
+.evento-proximo,.evento-pasado {
+    display: grid;
+    grid-template-columns: minmax(100px, 200px);
+    grid-template-rows: 150px;
+    grid-auto-rows: 150px;
+    gap: 25px;
+    justify-content: center;
+    align-self: stretch;
+}
+.proximo-item, .pasado-item {
+    background-color: #a4bcdb;
+    box-sizing: border-box;
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px 0 #05469baf;
+    position: relative;
+    overflow: hidden;
+}
+.proximo__img-container, .pasado__img-container {
+    height: 80%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.proximo__text-container, .pasado__text-container p {
+    color: var(--color-quinto);
+    text-align: center;
+    font-weight: 600;
+}
+.proximo-item::before, .pasado-item::before {
+    content: " ";
+    position: absolute;
+    height: 50%;
+    width: 35px;
+    background-color: #13a9D5f9;
+    top: -17%;
+    left: -8%;
+    transform: rotate(30deg);
+}
+.proximo-item:hover::before, .pasado-item:hover::before {
+    height: 250%;
+    top: -50%;
+    left: 150%;
+    transition: top .8s, left .8s, height .2s;
+    transition-timing-function: linear;
+}
+@container evento (min-width:300px) {
+    .evento-proximo,.evento-pasado {
+        grid-template-columns: 250px;
+        grid-template-rows: 200px;
+        grid-auto-rows: 200px;
+    }
+
+}
+@container evento (min-width:380px) {
+    .evento-proximo, .evento-pasado {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) ;
+    }
+    .evento-container h2 {
+        font-size: 1.5rem;
+    }
+    .proximo-item, .pasado-item {
+        justify-content: space-evenly;
+    }
+}
+@container evento (min-width:680px) {
+    .evento-proximo, .evento-pasado {
+        grid-template-columns: repeat(auto-fill, minmax(210px,1fr));
+    }
+}
+@container evento (min-width:800px) {
+    .evento-proximo, .evento-pasado {
+        grid-template-columns: repeat(3, minmax(250px,320px));
+        grid-template-rows: 250px;
+        grid-auto-rows: 250px;
+        justify-content: space-between;
+    }
+    .evento-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    .proximo-item::before, .pasado-item::before{
+        left: -3%;
+    }
+}
